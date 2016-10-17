@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Girl Code</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <!-- Bootstrap custom slider css -->
+    <link rel="stylesheet" type="text/css" href="./css/full-slider.css">
+    <!-- Template css -->
+    <link rel="stylesheet" type="text/css" href="./css/templateStyle.css">
+    <!-- Our own css -->
+    <link rel="stylesheet" type="text/css" href="./css/calendar.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+</head>
+
+<body id="top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="index.html">
+                    <img id="navbar-logo" src="./images/logo.png">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html?about">About</a>
+                    </li>
+                    <li>
+                     <!-- dropdown for team -->
+                     <div class="dropdown">
+                      <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <a href="team.html">Team</a>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="team.html">Ineke</a></li>
+                        <li><a href="team.html?katja">Katja</a></li>
+                        <li><a href="team.html?kristin">Kristin</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+
+<!-- calender of meetup events and slider with three featured events-->
+<div class="container calender-and-slider">
+    <div class="row">
+        <div class="container">
+
+            <div class="col-md-4">
+                <div id= 'calendar' class="calendar-container">
+                    <h2>Upcoming events</h2>
+                    <div class="event-coming-soon">No events scheduled yet. Keep checking, we have new ones every month!</div>
+                    <div class="event-container"> 
+                        <div class="event-sidebar">
+                            <span class="event-date"></span>
+                            <span class="event-month"></span>
+                        </div>
+                        <div class="event-main">
+                            <a class="event-link" href=""> 
+                                <h4 class='event-name'></h4>
+                                <div class='event-timeplace'> <span class="event-day"></span> <span class="event-time"></span> <span class="event-venue-name"></span></div>
+                                <div class='event-going'></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="event-container"> 
+                        <div class="event-sidebar">
+                            <span class="event-date"></span>
+                            <span class="event-month"></span>
+                        </div>
+                        <div class="event-main">
+                            <a class="event-link" href=""> 
+                                <h4 class='event-name'></h4>
+                                <div class='event-timeplace'> <span class="event-day"></span> <span class="event-time"></span> <span class="event-venue-name"></span></div>
+                                <div class='event-going'></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="event-container"> 
+                        <div class="event-sidebar">
+                            <span class="event-date"></span>
+                            <span class="event-month"></span>
+                        </div>
+                        <div class="event-main">
+                            <a class="event-link" href=""> 
+                                <h4 class='event-name'></h4>
+                                <div class='event-timeplace'> <span class="event-day"></span> <span class="event-time"></span> <span class="event-venue-name"></span></div>
+                                <div class='event-going'></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="event-container"> 
+                        <div class="event-sidebar">
+                            <span class="event-date"></span>
+                            <span class="event-month"></span>
+                        </div>
+                        <div class="event-main">
+                            <a class="event-link" href=""> 
+                                <h4 class='event-name'></h4>
+                                <div class='event-timeplace'> <span class="event-day"></span> <span class="event-time"></span> <span class="event-venue-name"></span></div>
+                                <div class='event-going'></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="event-container"> 
+                        <div class="event-sidebar">
+                            <span class="event-date"></span>
+                            <span class="event-month"></span>
+                        </div>
+                        <div class="event-main">
+                            <a class="event-link" href=""> 
+                                <h4 class='event-name'></h4>
+                                <div class='event-timeplace'> <span class="event-day"></span> <span class="event-time"></span> <span class="event-venue-name"></span></div>
+                                <div class='event-going'></div>
+                            </a>
+                        </div>
+                    </div>
+                    <h2>Past events</h2>
+                    <div class="event-container"> 
+                        <div class="event-sidebar">
+                            <span class="event-date"></span>
+                            <span class="event-month"></span>
+                        </div>
+                        <div class="event-main">
+                            <a class="event-link" href=""> 
+                                <h4 class='event-name'></h4>
+                                <div class='event-timeplace'> <span class="event-day"></span> <span class="event-time"></span> <span class="event-venue-name"></span></div>
+                                <div class='event-going'></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="event-container"> 
+                        <div class="event-sidebar">
+                            <span class="event-date"></span>
+                            <span class="event-month"></span>
+                        </div>
+                        <div class="event-main">
+                            <a class="event-link" href=""> 
+                                <h4 class='event-name'></h4>
+                                <div class='event-timeplace'> <span class="event-day"></span> <span class="event-time"></span> <span class="event-venue-name"></span></div>
+                                <div class='event-going'></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="event-container"> 
+                        <div class="event-sidebar">
+                            <span class="event-date"></span>
+                            <span class="event-month"></span>
+                        </div>
+                        <div class="event-main">
+                            <a class="event-link" href=""> 
+                                <h4 class='event-name'></h4>
+                                <div class='event-timeplace'> <span class="event-day"></span> <span class="event-time"></span> <span class="event-venue-name"></span></div>
+                                <div class='event-going'></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="event-container"> 
+                        <div class="event-sidebar">
+                            <span class="event-date"></span>
+                            <span class="event-month"></span>
+                        </div>
+                        <div class="event-main">
+                            <a class="event-link" href=""> 
+                                <h4 class='event-name'></h4>
+                                <div class='event-timeplace'> <span class="event-day"></span> <span class="event-time"></span> <span class="event-venue-name"></span></div>
+                                <div class='event-going'></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="event-container"> 
+                        <div class="event-sidebar">
+                            <span class="event-date"></span>
+                            <span class="event-month"></span>
+                        </div>
+                        <div class="event-main">
+                            <a class="event-link" href=""> 
+                                <h4 class='event-name'></h4>
+                                <div class='event-timeplace'> <span class="event-day"></span> <span class="event-time"></span> <span class="event-venue-name"></span></div>
+                                <div class='event-going'></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-7">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="img-carousel" id="carousel_img_01"></div>
+                        <!-- <img class="img-carousel" src="./images/event_2016_04.jpeg"> -->
+                        <div class="carousel-caption">
+                            <h3>We participate in initiatives to inspire young girls in tech</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-carousel" id="carousel_img_02"></div>
+                        <!-- <img class="img-carousel" src="./images/event_2015_06.jpeg"> -->
+                        <div class="carousel-caption">
+                            <h3>We organize talks and demos</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-carousel" id="carousel_img_03"></div>
+                        <!-- <img class="img-carousel" src="./images/event_2016_09.JPG"> -->
+                        <div class="carousel-caption">
+                            <h3>We give workshops</h3>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Events with pic and small description on date -->
+
+<!-- first section teamProfile -->
+<div class="content-section-c">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"> </div>
+                <h2 class="section-heading">Workshop Photon Particle: Girl Code meets IOT</h2>
+                <p class="lead">Because of the enthusiastic reactions to the talks about IOT at our last Meetup in August, our September Meetup last Friday at Q42 was all about connecting our own 'Things' to the internet ourselves. For this hands-on workshop we've picked the Particle Photon Starter Kit as our 'Thing'. And because it comes with a built-in WiFi module everybody was online in no time, building their own apps with the LED and photocell. Afterwards they took it home to keep on building the wild ideas they made up during the workshop.</p>
+                <h3>September 2016</h3>
+                <hr>
+            </div>
+
+
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="portrait-a" src="./images/event_2016_09.JPG" height="350px" width="350px" alt="GIF Ineke">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- second section teamProfile -->
+<div class="content-section-b">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">GirlCode meets Internet of Things</h2>
+                <p class="lead">IoT has become increasingly ubiquitous in our daily lives. It makes our lives easier and offers fun opportunities for us coders. Beyond coding apps and websites, you can bring your coding into the real world even more when you do something with IoT. For this meetup, we've arranged for cool talks and demos on IoT and IoT-projects.</p>
+                <h3>August 2016</h3>
+                <hr>
+            </div>
+
+            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                <img class="portrait-b" src="./images/event_2016_08.jpg" height="350px" width="350px" alt="GIF Katja">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Third section teamProfile -->
+<div class="content-section-c">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Girl Code meets Google Vision API</h2>
+                <p class="lead">Google was in Amsterdam with GCP Next World Tour, so we hijacked Girl Googler Sara Robinson! We organized an introduction to the API, a hands-on Vision API workshop and concluded with a brainstorm to inspire everyone to get started with the API. The result of the brainstorm session seemed to be that we have to do something with Tinder and the Vision API...
+                </p>
+                <h3>June 2016</h3>
+                <hr>
+            </div>
+
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="portrait-a" src="./images/event_2016_06.jpg" height="350px" width="350px" alt="GIF Kristin">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="content-section-b">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Girl Code at Night of the Nerds</h2>
+                <p class="lead">Girl Code was invited to Night of the Nerds 2016 to tell about our cause and show some cool demos. Ineke and Kristin were at this event, showcased our Connected Hula Hoop and gave a tech talk. Night of the Nerds is an event to get kids inspired about tech professions such as programming.
+                </p>
+                <h3>May 2016</h3>
+                <hr>
+            </div>
+
+            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                <img class="portrait-b" src="./images/event_2016_05.jpeg" height="350px" width="350px" alt="GIF Katja">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="content-section-c">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"> </div>
+                <h2 class="section-heading">Girl Code meets Girlsday</h2>
+                <p class="lead">Unconscious bias is formed very early in our lives, so we took part in the annual Girlsday organized by VHTO. The idea is to show schoolgirls that tech professions are not necessarily only for boys. Girls coded with Scratch and showed enormous creativity and enjoyed programming! In their feedback, most of them said they expected our profession to be very boring and it turned out to be completely the opposite!
+                </p>
+                <h3>April 2016</h3>
+                <hr>
+            </div>
+
+
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="portrait-a" src="./images/event_2016_04.jpeg" height="350px" width="350px" alt="GIF Ineke">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- second section teamProfile -->
+<div class="content-section-b">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Girl Code meets Meteor Rerun</h2>
+                <p class="lead">A rerun like on tv and as good as any good old Friends rerun. We wanted to offer a second chance to attend this meetup at our Amsterdam office. 50(!) of you did. So the world has gained 50 extra special awesome games of Tic Tac Toe. Wow!
+                </p>
+                <h3>March 2016</h3>
+                <hr>
+            </div>
+
+            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                <img class="portrait-b" src="./images/event_2016_03.jpg" height="350px" width="350px" alt="GIF Katja">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Third section teamProfile -->
+<div class="content-section-c">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Girl Code meets Meteor</h2>
+                <p class="lead">To shake things up a bit we organized a hands-on coding meetup instead of just talks. During Girl Code meets Meteor everyone built their own version of Tic Tac Toe in the good company of other Girl Coders and Meteor tutors.
+                </p>
+                <h3>February 2016</h3>
+                <hr>
+            </div>
+
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="portrait-a" src="./images/event_2016_02.jpg" height="350px" width="350px" alt="GIF Kristin">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="content-section-b">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Girl Code at Nerds on Stage</h2>
+                <p class="lead">Nerds on Stage, a yearly tech event for Dutch high school students, describes itself as 'A place to meet the brightest minds in technology and creativity'. So when we were asked to give two mini lectures there, we simply couldn't refuse. And we're glad we didn't, because we had a blast!
+                </p>
+                <h3>December 2015</h3>
+                <hr>
+            </div>
+
+            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                <img class="portrait-b" src="./images/event_2015_12.jpeg" height="350px" width="350px" alt="GIF Katja">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="content-section-c">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">The first meetup</h2>
+                <p class="lead">An inspiring night with talks and demos from four professional Girl Coders, a talk by Lieke Boon, and a very enthusiastic attendance by all sorts of Girl Coders from Girls in Tech's and our own network.</p>
+                <h3>June 2015</h3>
+                <hr>
+            </div>
+
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="portrait-a" src="./images/event_2015_06.jpeg" height="350px" width="350px" alt="GIF Kristin">
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Footer --> 
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10">
+                <p>Tackling the gender gap in code</p>
+            </div>
+            <div class="col-lg-2">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.meetup.com/girlcode/"> 
+                         <img class="social-button-footer" src="./images/button_meetup.png">
+                     </a>
+                 </li>
+                 <li>
+                    <a href="https://twitter.com/GirlCodeNL">
+                        <img class="social-button-footer" src="./images/button_twitter.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/GirlCodeNL/">
+                        <img class="social-button-footer" src="./images/button_facebook.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</footer>
+
+<!-- jQuery -->
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<!-- Bootstrap js -->
+<script src="./js/bootstrap.min.js"></script>
+<!-- our own js -->
+<script src="./js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,422 @@
+body {
+	background-image: url(../images/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+	box-shadow: 0px 10px 40px black;
+}
+
+#navbar-logo {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.dropdown-toggle {
+    border: none;
+    background-color: #f8f8f8;
+    height: 50px;
+    padding: 10px 15px 10px 15px;
+}
+
+.dropdown-toggle a {
+	color: #777;
+	cursor: auto;
+	text-decoration: none;
+}
+
+.dropdown-toggle a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.caret {
+	color: #777;
+}
+
+.dropdown-menu li a {
+	color: #777;
+	font-weight: bold;
+}
+
+#contains-all {
+	height: 100%;
+	position: relative;
+}
+
+.bg-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#picture1 {
+	background: url(../images/landingpage_slider_1-min.jpeg); 
+}
+
+#picture2 {
+	background: url(../images/landingspage_slider_2-min.jpg); 
+}
+
+#picture3 {
+	background: url(../images/landingspage_slider_3-min.JPG); 
+}
+
+#picture4 {
+	background: url(../images/landingspage_slider_4-min.jpg); 
+}
+
+#picture5 {
+	background: url(../images/landingspage_slider_5-min.jpeg); 
+}
+
+#picture6 {
+	background: url(../images/landingspage_slider_6-min.JPG); 
+}
+
+#picture1,
+#picture2,
+#picture3,
+#picture4,
+#picture5,
+#picture6 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-attachment: fixed;*/
+}
+
+#white-bg {
+	width: 100%;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 20;
+	opacity: 0.3;
+}
+
+.container-header {
+	width: 100%;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	position: absolute;
+}
+
+.intro-header {
+	padding: 0px;
+	margin-top: 20px;
+}
+
+.nomar {
+	margin:0px;
+}
+
+#cover-logo {
+	width: 100%;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 30;
+}
+
+#header-logo {
+	max-width: 60%;
+	filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.6));
+}
+
+.intro-divider {
+	max-width: 70%;
+}
+
+.social-button {
+	max-width: 10%;
+	filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.6));
+	z-index: 35;
+	position: relative;
+}
+
+.about-me {
+	z-index: 30;
+	position: relative;
+	background: -moz-linear-gradient(45deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgba(255,255,255,0.75) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgba(255,255,255,0.75) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	box-shadow: 10px 10px 40px black, 10px -10px 40px black;
+	padding: 0;
+}
+
+.social-button-footer, .social-button {
+	max-width: 20px;
+	filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.6));
+	align-items: right;
+}
+
+footer {
+	margin-top: 100px;
+	margin-bottom: 0;
+	box-shadow: 0px -10px 40px black;
+	padding: 10px;
+	color: #777;
+	z-index: 40;
+	position: relative;
+}
+
+/*=CONTACT-PAGE*/
+#contact {
+	padding-top:50px;
+}
+/*Probably on all <body> tags later?*/
+
+#contact a {
+	color:inherit;
+}
+
+#contact a:hover {
+	text-decoration: none;
+	color:inherit;
+}
+
+.cta-join-container {
+	text-align:center;
+	margin:50px auto 0px;
+
+	/*CONTROLLER*/
+	max-width:400px;
+	/**/
+}
+
+.cta-join-bg {
+	background-image: url("./../images/meetup_icon_clean.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	padding:20% 5%;
+	filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.6));
+}
+
+.cta-join-button{
+	/*BUTTON RESETS*/
+	border:none;
+	box-shadow: none;
+	background: none;
+	/**/
+	text-align: center;
+	margin:0px;
+	padding:10% 20%;
+	color:white;
+	
+	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/	
+	font-size:35px;
+	/**/
+}
+
+#contact footer {
+	margin-top:0px;
+}
+
+.content-container {
+    height: 100%;
+}
+
+.cta-join-members {
+	/*CHANGE MANUALLY RELATIVE TO CONTROLLER*/	
+	font-size:80px;
+	/**/
+}
+
+#top .cta-join-container {
+	max-width:110px;
+}
+
+#top .cta-join-button {
+	font-size:10px;
+}
+
+#top .cta-join-members {
+	font-size:26px;
+}
+
+/*#contact .cta-join-button:hover {
+	background-image: url("./../images/meetup_icon_clean_light.png");
+	/*color:rgb(230,230,230);*/
+
+#contact .social-container {
+	text-align:center;
+	font-size:18px;
+}
+
+#contact .social-gc, #contact .social-team {
+	display:inline-block;
+	vertical-align: text-top;
+}
+
+#contact .social-element {
+	list-style: none;
+	max-width: 200px;
+	margin:10px;
+}
+
+#contact .social-button {
+	vertical-align: text-bottom;
+	margin:1px 3px;
+	max-width: 20px;
+	max-height: 40px;
+}
+
+/*-----------------Team section------------------*/
+
+/*-----------------content-sections------------------*/
+
+.content-section-b, .content-section-c, .content-section-a {
+
+
+background: -moz-linear-gradient(45deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(255,255,255,0.75) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(255,255,255,0.75) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+box-shadow: 10px 10px 40px black, 10px -10px 40px black;
+padding: 0;
+
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+.content-section-a {
+	margin-top: 150px;
+}
+
+/* nth-child selector for the odd-even rule, can't test this properly 
+.content-section-:nth-child(2n+2) {
+	background: -moz-linear-gradient(-45deg, hsla(0,26%,86%,1) 0%, hsla(0,2%,49%,1) 100%); 
+background: -webkit-linear-gradient(-45deg, hsla(0,26%,86%,1) 0%,hsla(0,2%,49%,1) 100%); 
+background: linear-gradient(135deg, hsla(0,26%,86%,1) 0%,hsla(0,2%,49%,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5d3d3', endColorstr='#7f7979',GradientType=1 );
+}
+*/
+
+.content-section-a .container,
+.content-section-b .container,
+.content-section-c .container {
+	min-height: 410px;
+	display: flex;
+}
+
+.content-section-a .row,
+.content-section-b .row,
+.content-section-c .row {
+	display: flex;
+	align-items: center;
+	flex: 1;
+}
+
+/*-----------------END of content section------------------*/
+
+blockquote {
+	font-size: 14px;
+	font-style: italic;
+	border: none;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+ }
+
+blockquote::after{
+    content: "\201D"; /*Unicode for right Double Quote*/
+}
+
+.bracketA {
+	padding-right: 10px;
+}
+
+.bracketB {
+	padding-right: 10px;
+}
+
+.bracketC {
+	padding-right: 8px;
+}
+
+hr {
+	  border: 0;
+	  height: 2px;
+	  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.section-heading-spacer {
+    border-top: 0;
+}
+
+#hr-about {
+	float: left;
+	width: 485px;
+}
+
+.portrait-a {
+	border: 8px hsla(360, 100%, 100%, 1) solid;
+	border-radius: 100%;
+	box-shadow: -7px -7px 8px;	
+	float: right;
+}
+
+.portrait-b {
+	border: 8px hsla(360, 100%, 100%, 1) solid;
+	border-radius: 100%;
+	box-shadow: 7px 7px 8px;
+	float: left;
+}
+
+
+/*--------events page--------*/
+.calender-and-slider {
+	margin-top: 150px;
+}
+/*
+.calender-and-slider .col-md-4 {
+	padding-left: 0;
+}
+.calender-and-slider .col-md-8 {
+	padding-right: 0;
+}*/
+
+.img-carousel {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+#carousel_img_01 {
+	background-image: url(../images/event_2016_04.jpeg);
+}
+
+#carousel_img_02 {
+	background-image: url(../images/event_2015_06.jpeg);
+}
+
+#carousel_img_03 {
+	background-image: url(../images/event_2016_09.JPG);
+}
+
+/*place-holder styling for calender, so you see that there's a place for the calender, you can fix styling for the real calender */
+.placeholder-calender {
+	width: 100%;
+    height: 400px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+
+
+
+

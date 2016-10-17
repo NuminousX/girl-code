@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Girl Code</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <!-- Bootstrap custom slider css -->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/full-slider.css"> -->
+    <!-- Template css -->
+    <link rel="stylesheet" type="text/css" href="./css/templateStyle.css">
+    <!-- Our own css -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+</head>
+
+<body id="top">
+
+    <!-- FOR AFTER Node-lecture: loading in nav.html via jQuery so we don't have to copy-paste the code in all pages-->
+    <!-- <div id="nav-load"></div> -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav scroll" href="#top">
+                    <img id="navbar-logo" src="./images/logo.png">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                     <!-- dropdown for team -->
+                     <div class="dropdown">
+                      <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <a href="team.html">Team</a>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="team.html">Ineke</a></li>
+                        <li><a href="team.html?katja">Katja</a></li>
+                        <li><a href="team.html?kristin">Kristin</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="events.html">Events</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+
+</div>
+<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+
+<!-- container for background image, white image for filter effect and header logo and icons-->
+<div id="contains-all">
+    <!-- background images that fade in and fade out-->
+    <div class="bg-image" id="picture1"></div>
+    <div class="bg-image" id="picture2"></div>
+    <div class="bg-image" id="picture3"></div>
+    <div class="bg-image" id="picture4"></div>
+    <div class="bg-image" id="picture5"></div>
+    <div class="bg-image" id="picture6"></div>
+    <!-- white image on top of background images for filter effect-->
+    <div id="white-bg" style="background-image:url(./images/white-bg.jpg)"></div>
+
+
+    <!-- Header over background images animation, with logo and social buttons -->
+
+    <div id="cover-logo" class="intro-header">
+        <div class="container-header">
+            <div class="row nomar">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <img id="header-logo" src="./images/logo.png">
+                        <hr class="intro-divider">
+                        <div class="cta-join-container">
+                            <div class="cta-join-bg">
+                                <a href="https://www.meetup.com/girlcode">
+                                    <button class='cta-join-button'>
+                                        Join our <br>
+                                        <span class='cta-join-members'>367</span> <br> 
+                                        girl coders
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+</div> <!-- end of .contains-all-->
+
+<!-- About -->
+
+<div id="about" class="about-me">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">About Girl Code</h2>
+                <p class="lead">We are <a href="#">Ineke</a>, <a href="#">Katja</a> and <a href="#">Kristin</a>. Girl Code is an initiative founded in 2015 by Ineke at Q42. Now Girl Code is an independent community to inspire girls of all ages to get into code or stay into code. We also aim to raise awareness of the gender gap in tech, so boys are welcome too! We think the world of software engineering can only benefit from having more women on board and creating a more diverse field.<br><br>
+
+                    Professional coders aren't necessarily male. That is what we see as an undeniable fact, but also as a statement we want to enforce in the real world. That's why we hope you'll join us in making this difference.<br><br>
+
+                    Want to host our next meetup? Interested in speaking or mentoring at any of the following events? Have a topic you think we should discuss or bring to light? Feel free to <a href="#">contact us</a> anytime!</p>
+                    <hr id="hr-about">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+
+    </div>
+    <!-- /.about -->
+
+    <!-- FOR AFTER Node-lecture: loading in footer.html via jQuery so we don't have to copy-paste the code in all pages --> 
+    <!-- <div id="footer-"></div> -->
+
+    <!-- Footer --> 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <p>Tackling the gender gap in code</p>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.meetup.com/girlcode/"> 
+                               <img class="social-button-footer" src="./images/button_meetup.png">
+                           </a>
+                       </li>
+                       <li>
+                        <a href="https://twitter.com/GirlCodeNL">
+                            <img class="social-button-footer" src="./images/button_twitter.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/GirlCodeNL/">
+                            <img class="social-button-footer" src="./images/button_facebook.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<!-- Bootstrap js -->
+<script src="./js/bootstrap.min.js"></script>
+<!-- our own js -->
+<script src="./js/main.js"></script>
+
+</body>
+
+</html>

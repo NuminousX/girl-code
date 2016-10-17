@@ -1,0 +1,11 @@
+{
+  "name": "businesswebhost",
+  "version": "0.0.1",
+  "description": "local host for business website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yarith",
+  "license": "MIT"
+}
