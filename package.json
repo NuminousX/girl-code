@@ -1,0 +1,22 @@
+{
+  "name": "girl-code",
+  "version": "0.0.1",
+  "description": " Put website on a Node.js server, so that it can be reached at http://localhost:8000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InekeScheffers/girl-code.git"
+  },
+  "author": "Ineke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InekeScheffers/girl-code/issues"
+  },
+  "homepage": "https://github.com/InekeScheffers/girl-code#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
